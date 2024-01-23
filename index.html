@@ -34,6 +34,12 @@
             font-weight: 500;
             line-height: 26px;
         }
+
+        .primary-border {
+            border-top: 2px dotted rgba(19, 19, 24, 0.20);
+            border-bottom: 2px dotted rgba(19, 19, 24, 0.20);
+
+        }
     </style>
 
     <!-- tailwind custom colors -->
@@ -50,7 +56,7 @@
     </script>
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope lg:space-y-[100px]">
     <header class="container px-5 lg:p-0 mx-auto max-w-[1170px]">
 
         <!-- nav section start -->
@@ -80,7 +86,7 @@
                             <li><a>Blog</a></li>
                             <li><a>Contact</a></li>
                             <li><a>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                         fill="none">
                                         <g clip-path="url(#clip0_5_6)">
                                             <path
@@ -145,10 +151,106 @@
         </nav>
         <!-- nav section end -->
 
+        <!-- Carousel section start -->
+        <div class="carousel w-full">
+
+            <div id="slide1" class="carousel-item relative w-full">
+
+                <img src="./Images/1.png" class="w-full h-full" />
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <div id="slide2" class="carousel-item relative w-full">
+                <img src="./Images/1.png" class="w-full h-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+            <div id="slide3" class="carousel-item relative w-full">
+                <img src="./Images/1.png" class="w-full h-full" />
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Carousel section end -->
+
     </header>
 
-    <main class="mx-auto max-w-[1170px]">
+    <main class="mx-auto max-w-[1170px] px-5 lg:p-0 lg:space-y-[100px]">
+        <!-- Professional Hockeys Club section start -->
+        <section class="">
+            <div class="text-center space-y-2 primary-border py-8">
+                <h3 class="primary-heading text-4xl">Professional Hockeys Club</h3>
+                <p class="primary-desc mx-auto max-w-[607px]">Dit amet consectetur. Condimentum dignissim adipiscing
+                    aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            </div>
+        </section>
+        <!-- Professional Hockeys Club section end -->
 
+        <!-- Program Sections start -->
+        <section class="">
+            <div class="text-center space-y-2 primary-border py-8 mb-6 lg:mb-12">
+                <h3 class="primary-heading text-4xl">Program Sections</h3>
+                <p class="primary-desc mx-auto max-w-[607px]">Dit amet consectetur. Condimentum dignissim adipiscing
+                    aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 ">
+
+                <!-- grid image 1 -->
+                <div
+                    class=" bg-[linear-gradient(0deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url('./Images/2.png')] bg-center bg-cover bg-no-repeat col-span-1 w-full h-[244px] lg:h-[338px] justify-center flex-col flex lg:pl-10 lg:pr-9 rounded-xl p-6">
+
+                    <h3 class="primary-heading text-white lg:mb-2 text-xl lg:text-[28px] ">Junior Program</h3>
+
+                    <p class="priamry-desc text-[14px] lg:text-base text-white  lg:w-[495px] mb-5">Dolor sit amet consectetur. Ut urna diam quis
+                        sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et in.</p>
+                    <button class=" text-white font-bold text-lg lg:text-xl h-12 rounded-lg w-[150px] lg:w-[180px]  bg-primary-bg">Register
+                        Now!</button>
+
+                </div>
+
+                <!-- grid image 2 -->
+
+                <div
+                    class="bg-[linear-gradient(0deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url('./Images/3.png')] bg-center bg-cover bg-no-repeat col-span-1 w-full h-[244px] lg:h-[338px] justify-center flex-col flex lg:pl-10 lg:pr-9 rounded-xl p-6">
+                    <h3 class="primary-heading text-white lg:mb-2 text-xl lg:text-[28px] ">Teenager Program</h3>
+
+                    <p class="priamry-desc text-[14px] lg:text-base text-white lg:w-[495px] mb-5">Dolor sit amet consectetur. Ut urna diam quis sagittis. Elit elit 
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue sed et in.</p>
+                    <button class=" text-white font-bold text-lg lg:text-xl h-12 rounded-lg w-[150px] lg:w-[180px]  bg-primary-bg">Register
+                        Now!</button>
+
+                </div>
+
+                <!-- grid image 3 -->
+
+                <div
+                    class="bg-[linear-gradient(0deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url('./Images/4.png')] bg-no-repeat bg-center bg-cover col-span-1 lg:col-span-2 w-[100%] h-[244px] lg:h-[450px] justify-end flex-col flex lg:p-10 rounded-xl p-6">
+                    <h3 class="primary-heading text-white lg:mb-2 text-xl lg:text-[28px] ">Professional Program</h3>
+
+                    <p class="priamry-desc text-[14px] lg:text-base text-white lg:w-[520px] mb-5">Dolor sit amet consectetur. Ut urna diam quis
+                        sagittis. Elit elit
+                        enim sagittis turpis in magna. Id et sed euismod natoque amet nunc morbi nulla. Tortor congue
+                        sed et in.</p>
+                    <button class=" text-white font-bold text-lg lg:text-xl h-12 rounded-lg w-[150px] lg:w-[180px]  bg-primary-bg">Register
+                        Now!</button>
+
+                </div>
+            </div>
+        </section>
+        <!-- Program Sections end -->
     </main>
 
     <footer>
