@@ -10,6 +10,9 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- font awesome cdnjs -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -175,11 +178,12 @@
         <!-- Professional Hockeys Club section start -->
         <section class="">
             <div class="text-center space-y-2 primary-border py-8">
-                <h3 class="primary-heading text-4xl">Professional Hockeys Club</h3>
+                <h3 class="primary-heading text-2xl lg:text-4xl">Professional Hockeys Club</h3>
                 <p class="primary-desc mx-auto max-w-[607px]">Dit amet consectetur. Condimentum dignissim adipiscing
                     aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
             </div>
         </section>
+
         <!-- Professional Hockeys Club section end -->
 
         <!-- Program Sections start -->
@@ -409,7 +413,7 @@
             <div
                 class="gap-10 flex-col lg:flex-row flex border-[1px] border-[rgba(19, 19, 24, 0.10)] p-8 rounded-[16px]">
                 <div class="">
-                    <img src="./Images/11.png" alt="">
+                    <img src="./Images/11.png" alt="" class="h-[180px] lg:h-full w-[287px] lg:w-full mx-auto">
                 </div>
                 <div class="flex-1 h-full my-auto">
                     <!-- faq 1 -->
@@ -493,6 +497,105 @@
         </section>
         <!-- Clients Question section end -->
 
+        <!-- Get In Touch section start -->
+        <section class="space-y-10">
+            <div class="text-center space-y-2 primary-border py-8 lg:mb-12 mb-6">
+                <h3 class="primary-heading text-2xl lg:text-4xl">Get In Touch</h3>
+                <p class="primary-desc mx-auto max-w-[607px]">Dit amet consectetur. Condimentum dignissim adipiscing
+                    aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-6">
+
+                <div
+                    class="lg:p-[50px] p-6 max-w-[474px] border-[1px] border-[rgba(19, 19, 24, 0.10)] rounded-[16px] space-y-6 mx-auto">
+
+                    <div class="space-y-6 rounded-[16px] lg:h-[216px] p-8 bg-[rgba(188,237,109,0.10)]">
+
+                        <img src="./Images/tel.svg" alt="" class="w-[48px]">
+
+                        <p class="primary-desc">Phone Number :<br>
+                            <span class="primary-heading text-lg">
+                                (+62) 123-321-543</span>
+                        </p>
+
+                    </div>
+                    <div class="space-y-6 rounded-[16px] lg:h-[216px] p-8 bg-[rgba(253,221,95,0.10)]">
+
+                        <img src="./Images/mail.svg" alt="" class="w-[48px]">
+
+                        <p class="primary-desc">Email :<br>
+                            <span class="primary-heading text-lg">
+                                hockeys@support.com</span>
+                        </p>
+
+                    </div>
+                    <div class="space-y-6 rounded-[16px] lg:h-[216px] p-8 bg-[rgba(98,156,243,0.10)]">
+
+                        <img src="./Images/loc.svg" alt="" class="w-[48px]">
+
+                        <p class="primary-desc">Location :<br>
+                            <span class="primary-heading text-lg">152/1 Mohakhali Wireless Gate</span>
+                        </p>
+
+                    </div>
+                </div>
+
+                <!-- form section -->
+                <div class="flex-1 grid grid-cols-1 gap-6">
+
+                    <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+                        <div class="space-y-4">
+                            <label for="name" class="primary-heading">Your Name</label>
+                            <input class="rounded-xl p-5 w-full block bg-[rgba(19,19,24,0.03)]" type="text"
+                                placeholder="Enter your full name">
+                        </div>
+                        <div class="space-y-4">
+                            <label for="name" class="primary-heading">Your Email</label>
+                            <input class="rounded-xl p-5 w-full block bg-[rgba(19,19,24,0.03)]" type="email"
+                                placeholder="Enter your email">
+                        </div>
+                    </div>
+
+                    <div class="grid gap-6 grid-cols-1 lg:grid-cols-2">
+                        <div class="space-y-4">
+                            <label for="name" class="primary-heading">Subject</label>
+                            <input class="rounded-xl p-5 w-full block bg-[rgba(19,19,24,0.03)]" type="text"
+                                placeholder="Enter your subject">
+                        </div>
+                        <div class="space-y-4">
+                            <label for="name" class="primary-heading">Phone Number</label>
+                            <input class="rounded-xl p-5 w-full block bg-[rgba(19,19,24,0.03)]" type="number"
+                                placeholder="Enter your phone number">
+                        </div>
+                    </div>
+
+                    <div class="space-y-4">
+                        <label for="name" class="primary-heading">Massage</label>
+                        <textarea class="h-[200px] lg:h-auto rounded-xl p-5 min-w-full block bg-[rgba(19,19,24,0.03)]"
+                            name="" id="" cols="30" rows="17" placeholder="Write your message"></textarea>
+                    </div>
+
+                    <div class="">
+                        <button class="btn text-xl font-bold text-white text-center bg-primary-bg w-full">Send
+                            Message</button>
+                    </div>
+
+                </div>
+            </div>
+            <!-- social media section -->
+            <div class="space-y-4 h-[145px] rounded-xl bg-[rgba(19,19,24,0.03)] py-[35px]">
+                <h3 class="primary-heading text-2xl text-center">Social Media</h3>
+
+                <div class=" text-center space-x-6">
+                    <span class="h-"><a href="#" class=""><i class="text-2xl fa-brands fa-square-x-twitter"></i></a></span>
+                    <span class="h-"><a href="#" class=""><i class="text-2xl fa-brands fa-facebook-f"></i></a></span>
+                    <span class="h-"><a href="#" class=""><i class="text-2xl fa-brands fa-instagram"></i></a></i></span>
+                    <span class="h-"><a href="#" class=""><i class="text-2xl fa-brands fa-github"></i></a></span>
+                </div>
+            </div>
+        </section>
+        <!-- Get In Touch section end -->
     </main>
 
     <footer>
